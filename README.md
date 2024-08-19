@@ -1,4 +1,4 @@
-# calculator
+🧮 Calculator
 
 Welcome to the Calculator project! This is a simple yet powerful calculator that you can use for basic and scientific calculations.
 
