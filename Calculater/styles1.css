@@ -1,0 +1,128 @@
+/* Base Theme Styles (Light Mode Default) */
+:root {
+    --background-color: #f0f0f0;
+    --text-color: #000000;
+    --control-bg-color: #e0e0e0;
+    --control-hover-bg-color: #cccccc;
+    --control-active-bg-color: #bbbbbb;
+    --calculator-bg-color: #ffffff;
+    --display-bg-color: #ffffff;
+    --button-bg-color: #e0e0e0;
+    --button-text-color: #000000;
+    --more-options-bg-color: #f9f9f9;
+    --history-bg-color: #ffffff;
+    --history-text-color: #000000;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+    --background-color: #2c2c2c;
+    --text-color: #ffffff;
+    --control-bg-color: #333333;
+    --control-hover-bg-color: #444444;
+    --control-active-bg-color: #555555;
+    --calculator-bg-color: #1e1e1e;
+    --display-bg-color: #333333;
+    --button-bg-color: #333333;
+    --button-text-color: #ffffff;
+    --more-options-bg-color: #1e1e1e;
+    --history-bg-color: #1e1e1e;
+    --history-text-color: #ffffff;
+}
+
+/* General Body Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    padding-bottom: 80px; /* Ensure space for the fixed footer */
+    overflow: hidden; /* Disable scrolling */
+}
+
+/* Styles for Home Page */
+.home-container {
+    text-align: left; /* Align text to the left */
+    padding: 50px;
+    margin-top: 150px;
+    max-width: 50%; /* Constrain the width of the text container */
+    position: relative;
+    left: 80px; /* Move the text and button slightly to the left */
+}
+
+.home-container h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.home-container p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Button Styling */
+.go-to-calculator {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.go-to-calculator:hover {
+    background-color: #45a049;
+}
+
+/* Footer Content Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black; /* Footer background color set to black */
+    color: white; /* Footer text color set to white for contrast */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .love {
+    margin: 0;
+    font-size: 15px;
+}
+
+footer .share {
+    margin-top: 10px;
+}
+
+footer .icon {
+    color: white; /* Icon color set to white */
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .icon:hover {
+    color: grey; /* Change icon color on hover */
+}
+
+/* Image Styling */
+.calculator-image {
+    width: 40vw; /* 40% of the viewport width */
+    height: auto; /* Maintain the aspect ratio */
+    position: absolute;
+    right: 20px; /* Adjust distance from the right side */
+    top: 50px; /* Adjust distance from the top */
+    transition: transform 0.3s ease;
+}
+
+.calculator-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
