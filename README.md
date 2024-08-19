@@ -3,6 +3,8 @@
 Welcome to the Calculator project! This is a simple yet powerful calculator that you can use for basic and scientific calculations.
 
 Features
+
+![image](https://github.com/user-attachments/assets/94c95385-3522-4bd8-9671-d3e42fce2591)
 Basic Operations: Addition, Subtraction, Multiplication, Division.
 Scientific Functions: Sine, Cosine, Tangent, Logarithm, Exponentiation, Square root, and more.
 Memory Functions: Store and recall values with ease.
